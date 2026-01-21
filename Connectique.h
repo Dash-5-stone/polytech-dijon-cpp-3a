@@ -9,7 +9,8 @@ private:
   
 public:
     Connectique(std::string nom);
-  
+  friend std::ostream& operator<<(std::ostream& os , Connectique& connectique);
+
 };
 
 

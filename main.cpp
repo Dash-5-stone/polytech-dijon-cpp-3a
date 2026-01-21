@@ -7,6 +7,7 @@
 #include "PetitMateriel.h"
 #include "SalleCours.h"
 #include "Connectique.h"
+#include "Inventaire.h"
 #include "Ecran.h"
 #include "SalleTechnique.h"
 
@@ -35,17 +36,51 @@ std::cout << mr<< std::endl;
 std::cout << Ordinateur << std::endl;
 std::cout << LED << std::endl;
 std::cout << sal << std::endl;
+Inventaire invent();
 
 int choix;
+
+do{
 
 std::cout << "-------GESTION DU MATERIEL--------" << std::endl;
 
 
-std::cout << "Gestion du materiel";
-std::cout << "1. Ajouter un materiel";
-std::cout << "2. Afficher les materiels";
-std::cout << "3. Rechecher un materiel";
-std::cout << "0. retour au menu principal";
+std::cout << "Gestion du materiel \n";
+std::cout << "1. Ajouter un materiel \n";
+std::cout << "2. Afficher les materiels \n";
+std::cout << "3. Rechecher un materiel \n";
+std::cout << "0. retour au menu principal \n";
 std::cout << "Choix : ";
 std::cin >> choix ;
+
+
+
+    switch (choix)
+   {
+   case 1: {
+    std::string nom;
+    std::cout << " Entrer le nom :" << std::endl;
+    std::cin >> nom;
+    Materiel mat(nom); 
+    std::cout << mat;
+    Inventaire invent1();
+    
+
+   };
+   
+    break;
+    case 2:
+
+    break;
+   
+   default:
+    break;
+   }
+}while (choix!=0);
+
+return 0;
+ 
 }
+
+
+

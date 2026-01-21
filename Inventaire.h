@@ -12,6 +12,7 @@ private:
     std::vector<Materiel> materiels_;
     std::vector<Salle> salles_;
 public:
+Inventaire() =default;
     Inventaire(std::vector<Materiel> materiel, std::vector<Salle> salle );
     std::vector<Materiel> getMateriels() const;
     std::vector<Salle> getSalle() const;
