@@ -1,13 +1,18 @@
 #ifndef MATEREIL_H
 #define MATERIEL_H
+#include <iostream>
+#include <string>
+
 
 class Materiel
 {
-private:
-    /* data */
+protected:
+    std::string nom_; 
 public:
-    Materiel(/* args */);
-    ~Materiel();
+    Materiel(std::string nom);
+    std::string getNom() const;
+    void setNom(std::string nom);
+   
 };
 
 
