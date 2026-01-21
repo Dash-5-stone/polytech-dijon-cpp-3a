@@ -7,10 +7,12 @@
 class Ecran : public Materiel
 {
 private:
+    double taille_;
     
 public:
-    Ecran(std::string nom);
-    void afficherTaille();
+    Ecran(std::string nom, double taille);
+    friend std::ostream& operator<<(std::ostream& os , Ecran& ecran);
+    void afficherTaille(Ecran& ecran);
 
 };
 

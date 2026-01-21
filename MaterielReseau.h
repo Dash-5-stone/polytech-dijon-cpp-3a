@@ -10,7 +10,7 @@ private:
   
 public:
     MaterielReseau(std::string nom);
-    
+    friend std::ostream& operator<<(std::ostream& os , MaterielReseau& materiel);
 };
 
 

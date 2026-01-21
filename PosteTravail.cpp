@@ -6,3 +6,8 @@
 PosteTravail::PosteTravail(std::string nom, std::string systeme):Materiel(nom),systeme_(systeme)
 {
 }
+
+std::ostream& operator<<(std::ostream& os , PosteTravail& poste){
+    os << "Nom du poste de travail : "<< poste.getNom() << std::endl;
+    return os;
+}

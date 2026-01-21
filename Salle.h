@@ -9,9 +9,10 @@ protected:
     std::string nom_;
 public:
     Salle(std::string nom);
-    std::string getNom();
+    std::string getNom() const;
     void setNom(std::string nom);
- 
+ friend std::ostream& operator<<(std::ostream& os , Salle& salle);
+
 };
 
 

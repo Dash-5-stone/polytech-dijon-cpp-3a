@@ -9,7 +9,8 @@ private:
 
 public:
     SalleInformatique(std::string nom);
- 
+  friend std::ostream& operator<<(std::ostream& os , SalleInformatique& salleInfo );
+  
 };
 
 
