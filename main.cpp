@@ -10,5 +10,6 @@
 
 
 int main(){
-    
+    Materiel Ordinateur("HP");
+    std::cout << Ordinateur.getNom();
 }

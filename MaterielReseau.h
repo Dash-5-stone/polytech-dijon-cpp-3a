@@ -1,5 +1,5 @@
-#ifndef SALLE_H
-#define SALLE_H
+#ifndef MATERIELRESEAU_H
+#define MATERIELRESEAU_H
 #include <iostream>
 #include <string>
 #include "Materiel.h"

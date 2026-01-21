@@ -1,11 +1,10 @@
-#ifndef SALLE_H
-#define SALLE_H
+#ifndef CONNECTIQUE_H
+#define CONNECTIQUE_H
 #include <iostream>
 #include <string>
 #include "Materiel.h"
 
-class Connectique : public Materiel
-{
+class Connectique : public Materiel{
 private:
   
 public:

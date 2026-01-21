@@ -1,11 +1,11 @@
+#pragma once
 #ifndef MATEREIL_H
 #define MATERIEL_H
 #include <iostream>
 #include <string>
 
 
-class Materiel
-{
+class Materiel{
 protected:
     std::string nom_; 
 public:

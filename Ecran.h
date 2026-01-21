@@ -1,5 +1,5 @@
-#ifndef SALLE_H
-#define SALLE_H
+#ifndef ECRAN_H
+#define ECRAN_H
 #include <iostream>
 #include <string>
 #include "Materiel.h"
@@ -11,7 +11,7 @@ private:
 public:
     Ecran(std::string nom);
     void afficherTaille();
-    
+
 };
 
 
