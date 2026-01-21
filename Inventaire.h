@@ -13,15 +13,16 @@ private:
     std::vector<Salle> salles_;
 public:
     Inventaire(std::vector<Materiel> materiel, std::vector<Salle> salle );
-    std::vector<Materiel> getMateriels();
-    std::vector<Salle> getSalle();
+    std::vector<Materiel> getMateriels() const;
+    std::vector<Salle> getSalle() const;
     void setMateeriel();
     void setSalle();
-    void ajouterMateriel(std::string nom);
-    void ajouterSalle(std::string nom);
+    void ajouterMateriel(Materiel materiel);
+    void ajouterSalle(Salle salle);
+    void afficherMateriel(Materiel& materiel);
     void rechercherMateriel(std::string nom);
     void rechercherSalle(std::string nom);
- 
+friend std::ostream& operator<<(std::ostream& os , Inventaire& inventaire);
 };
 
 

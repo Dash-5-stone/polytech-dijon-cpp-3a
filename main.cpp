@@ -36,4 +36,16 @@ std::cout << Ordinateur << std::endl;
 std::cout << LED << std::endl;
 std::cout << sal << std::endl;
 
+int choix;
+
+std::cout << "-------GESTION DU MATERIEL--------" << std::endl;
+
+
+std::cout << "Gestion du materiel";
+std::cout << "1. Ajouter un materiel";
+std::cout << "2. Afficher les materiels";
+std::cout << "3. Rechecher un materiel";
+std::cout << "0. retour au menu principal";
+std::cout << "Choix : ";
+std::cin >> choix ;
 }

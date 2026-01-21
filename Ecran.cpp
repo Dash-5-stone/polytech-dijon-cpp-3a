@@ -3,9 +3,16 @@
 #include "Materiel.h"
 #include "Ecran.h"
 
-Ecran::Ecran(std::string nom,double taille):Materiel(nom),taille_(taille)
-{
+
+
+   Ecran::Ecran(std::string nom,double taille):Materiel(nom),taille_(taille){
+    if (taille <= 0) {
+        throw std::invalid_argument("La taille de l'ecran doit etre positive");
+    }
+    taille_ = taille;
 }
+
+
 
  void afficherTaille(Ecran& ecran){
     std::cout << "Taille : "<< ecran.getNom() << std::endl;
